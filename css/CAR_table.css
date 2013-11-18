@@ -1,0 +1,120 @@
+table.sortable
+{
+	width: 2500px;
+	/*border: 1px solid black;*/
+	border-collapse:collapse;
+}
+th.carNo, th.partNo, th.rev, th.qty, th.plant, th.dept, th.cust, th.rmaDate, th.rma, th.ncRef, th.claim, th.validity, th.probCat, th.probDesc, th.interim, th.rootCause, th.permanent, th.dateSent, th.dateDue, th.team, th.title, th.dateClosed, th.initials
+{
+	background: #DEDEDE;
+	border-bottom: 2px solid black;
+	padding-left: 5px; 
+	padding-right: 5px;
+}
+
+.headings
+{
+	white-space: nowrap;
+	/*border-bottom: 2px solid black;*/
+	
+}
+
+td.carNo, td.partNo, td.rev, td.qty, td.plant, td.dept, td.cust, td.rmaDate, td.rma, td.ncRef, td.probCat, td.probDesc, td.interim, td.rootCause, td.permanent, td.dateSent, td.dateDue, td.team, td.title, td.dateClosed, td.initials
+{
+	/*border-left: 1px solid black; */
+	border: 1px solid black;
+	padding: 5px;
+}
+.carNo
+{
+	width: 100px;
+}
+
+.partNo
+{
+	width: 100px;
+}
+.rev
+{
+	width: 50px;
+}
+.qty
+
+.plant
+{
+	width: 100px;
+}
+.dept
+{
+	width: 100px;
+}
+.cust
+{
+	width: 100px;
+}
+.rmaDate
+{
+	width: 100px;
+	white-space: normal;
+	
+}
+.rma
+{
+	width: 100px;
+}
+.ncRef
+{
+	width: 100px;
+}
+.probCat
+{
+	width: 100px;
+	white-space: normal;
+}
+.probDesc
+{
+	width: 250px;
+}
+.interim
+{
+	width: 250px;
+}
+
+.rootCause
+{
+	width: 250px;
+}
+
+.permanent
+{
+	width: 250px;
+}
+
+.dateSent
+{
+	width: 100px;
+	white-space: normal;
+
+}
+.dateDue
+{
+	width: 100px;
+	white-space: normal;
+}
+.team
+{
+	width: 100px;
+}
+.title
+{
+	width: 100px;
+}
+.dateClosed
+{
+	width: 100px;
+	white-space: normal;
+}
+.initials
+{
+	width: 50px;
+}

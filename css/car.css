@@ -1,0 +1,344 @@
+div{
+	/*background:red;*/
+	font-family:Calibri;
+	font-size:12pt;
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+input[type = text]
+{
+	border-top:none;
+	border-left:none;
+	border-right:none;
+	border-bottom:1px solid black;
+}
+
+
+select
+{
+	border:none;
+	background:#D0D0D0;
+	margin-top: 5px;
+}
+
+textarea
+{
+	font-family:Calibri;
+	font-size:12pt;
+	margin-top: 5px;
+}
+
+tr
+{
+	border:1px solid black;
+}
+
+td
+{
+	border:1px solid black;
+	padding: 5px;
+	
+	/*border-collapse: collapse;*/
+}
+
+.row
+{
+	position: relative;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+}
+
+.cell
+{
+	position: absolute;
+	top: 0px;
+}
+
+.small
+{
+	height: 30px;
+}
+
+.medium
+{
+	height: 60px;
+}
+
+.large
+{
+	height: 250px;
+}
+
+.padded
+{
+	position: absolute;
+	left: 0px;
+	padding-left: 5px;
+	padding-top: 5px;
+}
+
+.border-bottom, .border-top
+{
+	border: none;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+.border-bottom
+{
+	border-bottom: 1px solid black;
+}
+
+.border-top
+{
+	border-top: 1px solid black;
+}
+
+.row.small.border
+{
+	padding-left: 5px; 
+	width: 99.5%;
+}
+
+#logo
+{
+	position: absolute;
+	font-size: 16pt;
+	left: 0px;
+	width: 175px;
+	background: gray;
+	z-index: 2;
+}
+
+#formType
+{
+	position: absolute;
+	font-size: 12pt;
+	/*top: 0px;*/
+	left: 175px;
+	width: 22.5%;
+	padding-left: 5px;
+}
+
+#part
+{
+	position: absolute;
+	top: 0px;
+	left: 40.8%;
+	width: 295px;
+	padding-left: 5px;	
+}
+
+#carNo
+{
+	position: absolute;
+	top: 0px;
+	left: 725px;
+	width: 258px;
+	padding-left: 5px;	
+}
+
+#carQty
+{
+	position: absolute;
+	top: 0px;
+	left: 175px;
+	/*width: 95px;*/
+	width: 9.6%;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#carRev
+{
+	position: absolute;
+	top: 0px;
+	left: 28.5%;
+	width: 12.3%;
+	/*padding-left: 1px;
+	/*padding-right: 5px;*/
+}
+
+#carCust
+{
+	position: absolute;
+	top: 0px;
+	left: 40.8%;
+	width: 19.8%;
+	padding-left: 5px;
+	/*padding-right: 5px;*/
+}
+
+#carPlant
+{
+	position: absolute;
+	top: 0px;
+	left: 61.1%;
+	width: 15.5%;
+	padding-left: 5px;
+}
+
+#carDept
+{
+	position: absolute;
+	top: 0px;
+	left: 77.1%;
+	width: 22.4%;
+	padding-left: 5px;
+}
+
+#carRowDate
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 27%;
+	padding-left: 5px;
+}
+
+#carRma
+{
+	position: absolute;
+	top: 0px;
+	left: 27.5%;
+	width: 12.8%;
+	padding-left: 5px;
+}
+
+#carNcRef
+{
+	position: absolute;
+	top: 0px;
+	left: 40.8%;
+	width: 22.8%;
+	padding-left: 5px;
+}
+
+#carDateDue
+{
+	position: absolute;
+	top: 0px;
+	left: 64.1%;
+	width:35.4%;
+	padding-left: 5px;
+}
+
+#carDateSent
+{
+	position: absolute;
+	top: 30px;
+	left: 64.1%;
+	width:35.4%;
+	padding-left: 5px;
+}
+
+#carClaim
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 49.5%;
+	padding-left: 5px;
+}
+
+#carItem
+{
+	position: absolute;
+	top: 0px;
+	left: 50%;
+	width: 49.5%;
+	padding-left: 5px;
+}
+/*#car*/
+
+#sysAffected, #desc, #extDesc, #action1, #interim, #action2, #rootCause, #action3, #permanent, #action4, #dateCompleted, #team
+{
+	position: absolute;
+	top: 0px;
+	/*left: 0px;*/
+	/*width: 99.5%;*/
+	margin-left: 5px;
+	padding-left: 5px;
+}
+
+#extDesc, #interim, #rootCause
+{
+	left: 250px;
+}
+#carCloseDate
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 29.5%;
+	padding-left: 5px;
+}
+
+#carArchive
+{
+	position: absolute;
+	top: 0px;
+	left: 30%;
+	width: 69%;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#carReview
+{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 40%;
+	padding-left: 5px;
+}
+
+#carTitle
+{
+	position: absolute;
+	top: 0px;
+	left: 40.5%;
+	width: 20%;
+	padding-left: 5px;
+}
+
+#carInit
+{
+	position: absolute;
+	top: 0px;
+	left: 61%;
+	width: 38.5%;
+	padding-left: 5px;
+}
+.noborder
+{
+	border-bottom: solid white 1px;
+}
+
+.noBorder2
+{
+	border-right: solid white 1px;
+	height:100px;
+}
+
+.center
+{
+	text-align: center;
+}
+
+#gray
+{
+	background:#00FFFF;
+/*	background:#C6C6C6;*/
+}
+
+.title
+{
+	width: 100pt;
+	font-family:Arial Black;
+	font-size: 12pt;
+	font-weight: bold;
+	text-align: center;
+}

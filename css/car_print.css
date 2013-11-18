@@ -1,0 +1,79 @@
+table
+{
+	/*background:red;*/
+	font-family: Calibri;
+	font-size:8pt;
+	border: 1px solid black;
+	border-collapse: collapse;
+	height:9in;
+	width:auto;
+}
+
+input[type = text]
+{
+	border:none;
+	font-size:9pt;
+}
+
+select
+{
+	border:none;
+	font-size:9pt;
+	background:none;
+}
+
+#customer
+{
+	font-size:8;
+}
+textarea
+{
+	border:none;
+	font-family: Calibri;
+	font-size:10pt;
+}
+
+tr
+{
+	border:1px solid black;
+}
+td
+{
+	border:1px solid black;
+	padding 5px;
+	/*border-collapse: collapse;*/
+}
+
+.noborder
+{
+	border-bottom: solid white 1px;
+	font-size:10pt;
+	padding: 1px;
+}
+
+.noBorder2
+{
+	border-right: solid white 1px;
+}
+
+.noPrint
+{
+	display:none;
+}
+
+.center
+{
+	text-align:center
+}
+
+#gray
+{
+	background:#C6C6C6;
+}
+
+.title
+{
+	font-family:Arial Black;
+	padding: 5px;
+	/*width: 1.5in;*/
+}
