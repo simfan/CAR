@@ -3,7 +3,6 @@
 
 	$my_car = new CAR_Process();
 	
-	//$my_car->car_array['car_no'] = $_POST['carNum'];
 	$my_car->setPartNum($_POST['part']);
 	$my_car->setQty($_POST['qty']);
 	$my_car->setRev($_POST['rev']);

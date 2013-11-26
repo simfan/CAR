@@ -8,6 +8,17 @@ class sortTable extends Table
 	var $column_name = array("car_no"=>"Car Number", "car_part_no"=>"Part Number", "car_rev"=>"Revision", "car_qty"=>"Qty", "car_dept"=>"Dept", "car_cust"=>"Customer", "car_req_date"=>"RMA Date", "car_rma_no"=>"RMA Number", "car_cust_nc"=>"NC Ref", "car_fargo_sn"=>"Validity", "car_desc"=>"Prob. Category");
 	var $query;
 	var $order;
+	var $tableCount;
+	
+	function setCount($count)
+	{
+		$this->tableCount = $count;
+	}
+	
+	function getCount()
+	{
+		return $this->tableCount;
+	}
 	
 	function setPlant($plant)
 	{
@@ -40,10 +51,10 @@ class sortTable extends Table
 		
 		$query = str_replace("|", "'", $query);
 		
-		if(preg_match("/WHERE/", $query))
-		{
-			list($query_fields, $query_condtions) = explode($query);
-			if(!preg_match("/car_plant =/", $query_conditions))
+		if(preg_match("/WHERE/i", $query))
+		{	
+			list($query_fields, $query_conditions) = explode("WHERE", $query);
+			if(!preg_match("/car_plant =/i", $query_conditions))
 			{
 				$query .= " AND car_plant = '" . $this->getPlant() . "'";
 			}
@@ -102,13 +113,13 @@ class sortTable extends Table
 			{
 				$new_order = 0;
 			}
-			$heading .= "<th onclick = \"sortTable('". $this->getPlant() ."', '" . $db_field . "', '" . $query . "', $i, $new_order)\">" . $column_title . "</th>";
+			$heading .= "<th onclick = \"sortTable('". $this->getPlant() ."', '" . $db_field . "', '" . $query . "', '" . $this->getCount() . "', '" . $new_order . "')\">" . $column_title . "</th>";
 			$i++;
 		}
 		$heading .= "</tr>";
 		return $heading;
 	}
-	function getRows()
+	function getRows($match)
 	{
 		$this->setSize($this->getColumnNames());
 		$conn = pg_connect("host=$this->host dbname=$this->db user=$this->user password=$this->pass");

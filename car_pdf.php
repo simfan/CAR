@@ -63,7 +63,7 @@
 	$reviewed = $car['car_review'];
 	
 	//calculations so the multiple line fields to fit in allocated space
-	 $multi_width = 135/83;
+	$multi_width = 135/83;
 	$max_lines = 8;
 	$ext_desc_length = strlen($ext_desc);
 	$ext_desc_lines = ceil($ext_desc_length/83);
@@ -279,6 +279,4 @@
 	}
 	$pdf->Image($car_no . "b.jpeg");
 	$pdf->Image($car_no . "c.jpeg");*/
-	$pdf->Output();
-	
-?>
+	$pdf->Output();?>

@@ -37,10 +37,10 @@
 	//set the conditions for the query based on the values given on the search page.
 	foreach($_POST as $name=>$value)
 	{
-		if(($value != '' && $value != "All" && $value != "A") && $name != "submit")
+		if(($value != '' && $value != "All") && $name != "submit")
 		{
-			$car_table->setCondition($value, $name, $j);
-			$j++;
+			$j = $car_table->setCondition($value, $name, $j);
+			//$j++;
 		}
 	}
 

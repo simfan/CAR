@@ -30,6 +30,7 @@ class Table
 					{
 						$this->conditions .= " AND " . $this->getDBName($name) . " = '" . $value . "' ";
 					}
+					$j++;
 				}
 				break;
 			case('dept'):
@@ -45,11 +46,12 @@ class Table
 					{
 						$this->conditions .= " AND " . $this->getDBName($name) . " = '" . $value . "'";
 					}
+					$j++;
 				}
 				break;
 			
 			default:
-				if($value != "" || $value != " ")
+				if($value != "" && $value != " ")
 				{
 					if($j == 0)
 					{
@@ -59,9 +61,11 @@ class Table
 					{
 						$this->conditions .= " AND " . $this->getDBName($name) . " LIKE '%" . $value . "%'";
 					}
+					$j++;
 				}
 			break;
 		}
+		return $j;
 	}
 	
 	function getConditions()

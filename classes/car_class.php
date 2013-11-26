@@ -12,7 +12,7 @@
 		//*********SET and GET methods*****************/
 		 function setCarNum($action, $car_num)
 		{
-			if ($action == 'Edit')
+			if ($action == 'edit')
 			{
 				$this->car_num = $car_num;
 			}

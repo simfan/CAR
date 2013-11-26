@@ -15,12 +15,12 @@
 	{
 		$match = false;
 	}
+	$car_table->setCount($_GET['count']);
 	$car_table->setPlant($_GET['plant']);
 	$car_table->setColumn($_GET['field']);
 	$car_table->setOrder($_GET['sort']);
 	$car_table->setQuery($_GET['query']);
-	
 	$car_table->getColumns($match);
-	print $car_table->getRows();	
+	print $car_table->getRows($match);	
 	
 ?>
